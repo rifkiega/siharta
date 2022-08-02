@@ -8,7 +8,7 @@
 <div class="container-fluid px-4">
     <h1 class="mt-4">HARTA USAHA</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Laporan Baru / Harta Kekayaan</li>
+        <li class="breadcrumb-item active">Laporan Baru / Harta Usaha</li>
     </ol>
 
     <ul class="nav nav-tabs">
@@ -39,47 +39,47 @@
     </ul>
     
 
-    <form action="#" method="POST">
+    <form action="/tambah_harta_usaha" method="POST">
         @csrf
 
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Jenis Usaha</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Usaha">
+        <input type="text" name="jenis_usaha" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Usaha">
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Atas Nama</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Atas Nama">
+        <input type="text" name="atas_nama" class="form-control" id="exampleFormControlInput1" placeholder="Atas Nama">
     </div>
     
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Hubungan Keluarga / Relasi</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Hubungan Keluarga / Relasi">
+        <input type="text" name="hubungan_keluarga" class="form-control" id="exampleFormControlInput1" placeholder="Hubungan Keluarga / Relasi">
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Jumlah / Satuan</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jumlah / Satuan">
+        <input type="text" name="jumlah_satuan" class="form-control" id="exampleFormControlInput1" placeholder="Jumlah / Satuan">
     </div>
     
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Tahun Perolehan</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tahun Perolehan">
+        <input type="date" name="tahun_perolehan" class="form-control" id="exampleFormControlInput1" placeholder="Tahun Perolehan">
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Omzet Per tahun</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Omzet Pertahun">
+        <input type="text" name="omzet_pertahun" class="form-control" id="exampleFormControlInput1" placeholder="Omzet Pertahun">
     </div>
 
     <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Perhasilan Bersih Per Tahun</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Omzet Pertahun">
+        <label for="exampleFormControlInput1" class="form-label">Penghasilan Bersih Per Tahun</label>
+        <input type="text" name="penghasilan_bersih_pertahun" class="form-control" id="exampleFormControlInput1" placeholder="Penghasilan Bersih Pertahun">
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nilai Saat Pelaporan</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Omzet Pertahun">
+        <input type="text" name="nilai_saat_pelaporan" class="form-control" id="exampleFormControlInput1" placeholder="Omzet Pertahun">
     </div>
 
 

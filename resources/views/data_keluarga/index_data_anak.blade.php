@@ -13,7 +13,7 @@
 
     <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index_data_suamidanistri">DATA SUAMI/ISTRI</a>
+          <a class="nav-link active" aria-current="page" href="/index_data_suamiistri">DATA SUAMI/ISTRI</a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/index_data_anak">DATA ANAK</a>

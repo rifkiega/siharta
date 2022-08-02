@@ -21,7 +21,7 @@ return new class extends Migration
             $table->bigInteger('jumlah_satuan')->nullable();
             $table->date('tahun_perolehan')->nullable();
             $table->bigInteger('harga_perolehan')->nullable();
-            $table->bigInteger('nilai_saat_pelaporan')->nullable();
+            $table->bigInteger('nilai_jual_saat_pelaporan')->nullable();
             $table->timestamps();
         });
     }

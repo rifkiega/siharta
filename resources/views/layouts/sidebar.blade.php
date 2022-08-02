@@ -67,7 +67,7 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                     Penghasilan
                 </a>
-                <a class="nav-link" href="/index_data_suamidanistri">
+                <a class="nav-link" href="/index_data_suamiistri">
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                     Data Keluarga
                 </a>

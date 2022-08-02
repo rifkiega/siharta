@@ -8,7 +8,7 @@
 <div class="container-fluid px-4">
     <h1 class="mt-4">HARTA TIDAK BERGERAK</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Laporan Baru / Harta Kekayaan</li>
+        <li class="breadcrumb-item active">Laporan Baru / Harta Tidak Bergerak</li>
     </ol>
 
     <ul class="nav nav-tabs">
@@ -39,13 +39,13 @@
     </ul>
     
 
-    <form action="tambah_harta_tidak_bergerak" method="POST">
+    <form action="/tambah_harta_tidak_bergerak" method="POST">
         @csrf
 
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Jenis Harta</label>
           <div class="input-group mb-3">
-              <input required name="jenis-harta" type="text" class="form-control" id="exampleFormControlInput1"  placeholder="jenis_harta">
+              <input required name="jenis_harta" type="text" class="form-control" id="exampleFormControlInput1"  placeholder="jenis_harta">
           </div>
       </div>
 
@@ -88,7 +88,7 @@
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">harga Peroleh</label>
     <div class="input-group mb-3">
-        <input required name="harta_peroleh" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="harga_peroleh">
+        <input required name="harga_peroleh" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="harga_peroleh">
     </div>
 </div>
 

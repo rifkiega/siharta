@@ -20,8 +20,7 @@ return new class extends Migration
             $table->text('hubungan_keluarga')->nullable();
             $table->bigInteger('jumlah_kepemilikan')->nullable();
             $table->text('nama_perusahaan')->nullable();
-            $table->bigInteger('harga_perolehan')->nullable();
-            $table->bigInteger('nilai_saat_pelaporan')->nullable();
+            $table->bigInteger('nilai_jual_saat_pelaporan')->nullable();
             $table->timestamps();
         });
     }

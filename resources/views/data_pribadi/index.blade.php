@@ -23,14 +23,14 @@
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
         <div class="input-group mb-3">
-            <input required name="nama_lengkap" type="text" class="form-control" id="exampleFormControlInput1"  placeholder="nama_lengkap">
+            <input name="nama_lengkap" type="text" class="form-control" id="exampleFormControlInput1"  placeholder="nama_lengkap">
         </div>
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nomer KTP</label>
         <div class="input-group mb-3">
-            <input required name="nomer_ktp" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="nomer_ktp">
+            <input name="nomer_ktp" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="nomer_ktp">
         </div>
     </div>
     
@@ -45,7 +45,7 @@
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Tempat Lahir</label>
         <div class="input-group mb-3">
-            <input required name="tempat" type="text" class="form-control" id="exampleFormControlInput1"  placeholder="nama_lengkap">
+            <input name="tempat" type="text" class="form-control" id="exampleFormControlInput1"  placeholder="nama_lengkap">
         </div>
     </div>
 
@@ -73,19 +73,19 @@
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Status Perkawinan</label>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="status_perkawinan" id="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="status_perkawinan" value="belum_nikah" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1">
-              Belum Kawin
+              Belum Nikah
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="status_perkawinan" id="flexRadioDefault2" checked>
+            <input class="form-check-input" type="radio" name="status_perkawinan" value="kawin" id="flexRadioDefault2">
             <label class="form-check-label" for="flexRadioDefault2">
-              Kawin
+              Nikah
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="status_perkawinan" id="flexRadioDefault2" checked>
+            <input class="form-check-input" type="radio" name="status_perkawinan" value="duda_janda" id="flexRadioDefault2">
             <label class="form-check-label" for="flexRadioDefault2">
               Duda/Janda
             </label>
@@ -95,7 +95,7 @@
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">NIP</label>
         <div class="input-group mb-3">
-            <input required name="nip" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="nip">
+            <input name="nip" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="nip">
         </div>
     </div>
     
@@ -124,7 +124,7 @@
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Jabatan</label>
         <div class="input-group mb-3">
-            <input required name="jabatan" type="text" class="form-control" id="exampleFormControlInput1"  placeholder="jabatan">
+            <input name="jabatan" type="text" class="form-control" id="exampleFormControlInput1"  placeholder="jabatan">
         </div>
     </div>
 
@@ -150,7 +150,7 @@
         </div>
         <label for="exampleFormControlInput1" class="form-label">Kantor :</label>
         <div class="input-group mb-3">
-            <input required name="kantor" type="text" class="form-control" name="kantor" id="exampleFormControlInput1"  placeholder="kantor">
+            <input name="kantor" type="text" class="form-control" name="kantor" id="exampleFormControlInput1"  placeholder="kantor">
         </div>
         <div class="row">
             <div class="col">
@@ -162,7 +162,7 @@
         </div>
         <label for="exampleFormControlInput1" class="form-label">Rumah :</label>
         <div class="input-group mb-3">
-            <input required name="rumah" type="text" class="form-control" name="rumah" id="exampleFormControlInput1"  placeholder="rumah">
+            <input name="rumah" type="text" class="form-control" name="rumah" id="exampleFormControlInput1"  placeholder="rumah">
         </div>
         <div class="row">
             <div class="col">
@@ -177,14 +177,14 @@
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nomer Telephon</label>
         <div class="input-group mb-3">
-            <input required name="nomer_telephon" type="number" class="form-control" name="nomer_telephon" id="exampleFormControlInput1"  placeholder="nomer_telephon">
+            <input name="nomer_telephon" type="number" class="form-control" name="nomer_telephon" id="exampleFormControlInput1"  placeholder="nomer_telephon">
         </div>
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">NPWP</label>
         <div class="input-group mb-3">
-            <input required name="npwp" type="number" class="form-control" name="npwp" id="exampleFormControlInput1"  placeholder="npwp">
+            <input name="npwp" type="number" class="form-control" name="npwp" id="exampleFormControlInput1"  placeholder="npwp">
         </div>
     </div>
     

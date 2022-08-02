@@ -8,7 +8,7 @@
 <div class="container-fluid px-4">
     <h1 class="mt-4">HARTA HUTANG</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Laporan Baru / Harta Kekayaan</li>
+        <li class="breadcrumb-item active">Laporan Baru / Harta Hutang</li>
     </ol>
 
     <ul class="nav nav-tabs">
@@ -34,7 +34,7 @@
             <a class="nav-link active" aria-current="page" href="/index_harta_piutang">PIUTANG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index_harta_hutang">HUTANG</a>
+            <a class="nav-link" aria-current="page" href="/index_harta_hutang">HUTANG</a>
           </li>
     </ul>
     

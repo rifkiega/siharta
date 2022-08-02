@@ -17,7 +17,8 @@ class DataPribadiController extends Controller
     }
     
     public function tambah_data_pribadi(Request $request){
-        DataPribadi::create([
+        DataPribadiController::create([
+                'id' => $request->id,
                 'nama_lengkap' => $request->nama_lengkap,
                 'nomer_ktp' => $request->nomer_ktp,
                 'jenis_kelamin' => $request->jenis_kelamin,
@@ -38,6 +39,7 @@ class DataPribadiController extends Controller
                 'alamat' => $request->alamat,
                 'nomer telephon' => $request->nomer_telephon,
                 'npwp' => $request->npwp,      
+                'timestamps' => $request,
                 ]);
 
     //  return back();
@@ -52,7 +54,7 @@ class DataPribadiController extends Controller
      */
     public function create()
     {
-        return view('data_pribadi.create');
+        return view('data_pribadi.index');
     }
 
     /**
