@@ -1,6 +1,6 @@
 @extends('layouts/main')
 
-@section('title', 'Harta Kekayaan')
+@section('title', 'Penghasilan Hibah')
 
 @section('content')
 
@@ -8,7 +8,7 @@
 <div class="container-fluid px-4">
     <h1 class="mt-4">PENGHASILAN HIBAH</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Laporan Baru / Harta Kekayaan</li>
+        <li class="breadcrumb-item active">Laporan Baru / penghasilan Hibah</li>
     </ol>
 
     <ul class="nav nav-tabs">
@@ -24,7 +24,7 @@
     </ul>
     
 
-    <form action="/tambah_penghasilan_profesi" method="POST">
+    <form action="/tambah_penghasilan_hibah" method="POST">
         @csrf
 
     <div class="mt-3 mb-3">

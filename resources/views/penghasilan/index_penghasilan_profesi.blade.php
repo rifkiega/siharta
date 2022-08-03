@@ -8,7 +8,7 @@
 <div class="container-fluid px-4">
     <h1 class="mt-4">PENGHASILAN PROFESI</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Laporan Baru / Harta Kekayaan</li>
+        <li class="breadcrumb-item active">Laporan Baru / Penghasilan Profesi</li>
     </ol>
 
     <ul class="nav nav-tabs">
@@ -43,7 +43,7 @@
     </div>
     
     <div class="mt-3 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Penghasil Bersih</label>
+        <label for="exampleFormControlInput1" class="form-label">Penghasilan Bersih</label>
         <div class="input-group mb-3">
             <span class="input-group-text">Rp.</span>
             <input required name="penghasilan_bersih" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="penghasilan_bersih">

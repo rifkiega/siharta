@@ -39,37 +39,37 @@
     </ul>
     
 
-    <form action="#" method="POST">
+    <form action="/tambah_harta_uang_tunai" method="POST">
         @csrf
 
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Jenis Kas</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Usaha">
+        <input type="text" name="jenis_kas" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Kas">
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Atas Nama</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Atas Nama">
+        <input type="text" name="atas_nama" class="form-control" id="exampleFormControlInput1" placeholder="Atas Nama">
     </div>
     
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Hubungan Keluarga / Relasi</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Hubungan Keluarga / Relasi">
+        <input type="text" name="hubungan_keluarga" class="form-control" id="exampleFormControlInput1" placeholder="Hubungan Keluarga / Relasi">
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nama Bank / Lembaga Penyimpanan</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jumlah / Satuan">
+        <input type="text" name="nama_bank_lembaga_penyimpanan" class="form-control" id="exampleFormControlInput1" placeholder="Nama Bank / Lembaga Penyimpanan">
     </div>
     
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nomer Rekening / Polis</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tahun Perolehan">
+        <input type="text" name="nomer_rekening" class="form-control" id="exampleFormControlInput1" placeholder="Nomer Rekening / Polis">
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Saldo Saat Pelaporan</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Omzet Pertahun">
+        <input type="text" name="saldo_saat_pelaporan" class="form-control" id="exampleFormControlInput1" placeholder="Saldo Saat Pelaporan">
     </div>
 
     <div class="mb-3">

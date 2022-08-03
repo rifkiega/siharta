@@ -13,7 +13,7 @@
 
     <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">DATA PRIBADI</a>
+          <a class="nav-link" aria-current="page" href="#">DATA PRIBADI</a>
         </li>
     </ul>
 

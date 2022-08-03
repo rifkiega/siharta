@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('piutangs', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('atas_nama')->nullable();
-            $table->bigInteger('hubungan_relasi_keluarga')->nullable();
-            $table->bigInteger('nama_bank_lembaga_penyimpanan')->nullable();
+            $table->string('atas_nama')->nullable();
+            $table->string('hubungan_keluarga')->nullable();
+            $table->string('nama_bank_lembaga_penyimpanan')->nullable();
             $table->bigInteger('no_rekening')->nullable();
             $table->bigInteger('saldo_saat_pelaporan')->nullable();
             $table->timestamps();

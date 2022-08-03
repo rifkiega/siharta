@@ -23,12 +23,12 @@
 
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Pengeluaran Rutin</label>
-        <input required name="pengeluaran_rutin" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Atas Nama">
+        <input required name="pengeluaran_rutin" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Atas Nama">
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Pengeluaran Lainnya</label>
-        <input required name="pengeluaran_lainnya" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Hubungan Keluarga / Relasi">
+        <input required name="pengeluaran_lainnya" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Hubungan Keluarga / Relasi">
     </div>
     
     <div class="mb-3">

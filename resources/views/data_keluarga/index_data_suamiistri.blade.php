@@ -55,11 +55,11 @@
 
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Penghasilan Pertahun</label>
-        <input required name="tempat_tanggal_lahir" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Penghasilan">
+        <input required name="penghasilan_pertahun" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Penghasilan">
     </div>
 
     <div class="mt-3 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Alamat</label>
+        <label for="exampleFormControlInput1" class="form-label">Alamat Rumah</label>
         <input required name="alamat_rumah" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Penghasilan">
     </div>
 

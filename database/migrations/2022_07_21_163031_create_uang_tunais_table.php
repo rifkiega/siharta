@@ -18,9 +18,9 @@ return new class extends Migration
             $table->text('jenis_kas')->nullable();
             $table->text('atas_nama')->nullable();
             $table->text('hubungan_keluarga')->nullable();
-            $table->bigInteger('nama_bank_lembaga_penyimpanan')->nullable();
+            $table->string('nama_bank_lembaga_penyimpanan')->nullable();
             $table->bigInteger('nomer_rekening')->nullable();
-            $table->bigInteger('nilai_saat_pelaporan')->nullable();
+            $table->bigInteger('saldo_saat_pelaporan')->nullable();
             $table->timestamps();
         });
     }

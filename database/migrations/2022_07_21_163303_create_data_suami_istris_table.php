@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('data_suami_istris', function (Blueprint $table) {
             $table->id();
             $table->text('nama_suami_istri')->nullable();
-            $table->date('tempat_tanggal_lahir')->nullable();
+            $table->dateTime('tempat_tanggal_lahir')->nullable();
             $table->text('pekerjaan')->nullable();
             $table->bigInteger('penghasilan_pertahun')->nullable();
-            $table->bigInteger('alamat_rumah')->nullable();
+            $table->text('alamat_rumah')->nullable();
             $table->timestamps();
         });
     }

@@ -8,7 +8,7 @@
 <div class="container-fluid px-4">
     <h1 class="mt-4">PENGHASILAN DARI JABATAN</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Laporan Baru / Harta Kekayaan</li>
+        <li class="breadcrumb-item active">Laporan Baru / penghasilan Jabatan</li>
     </ol>
 
     <ul class="nav nav-tabs">

@@ -11,4 +11,5 @@ class Piutang extends Model
 
     protected $guarded = ['id'];
     
+    
 }

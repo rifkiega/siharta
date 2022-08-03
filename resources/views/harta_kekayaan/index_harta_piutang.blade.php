@@ -1,6 +1,6 @@
 @extends('layouts/main')
 
-@section('title', 'Harta Kekayaan')
+@section('title', 'Harta Piutang')
 
 @section('content')
 
@@ -52,7 +52,7 @@
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Hubungan_Keluarga_relasi</label>
         <div class="input-group mb-3">
-            <input required name="hubungan_keluarga_relasi" type="hubungan_keluarga_relasi" class="form-control" id="exampleFormControlInput1"  placeholder="hubungan_keluarga_relasi">
+            <input required name="hubungan_keluarga" type="hubungan_keluarga_relasi" class="form-control" id="exampleFormControlInput1"  placeholder="hubungan_keluarga_relasi">
         </div>
     </div>
     

@@ -21,48 +21,42 @@
     </ul>
     
 
-    <form action="#" method="POST">
+    <form action="/tambah_data_keluarga_anak" method="POST">
         @csrf
 
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nama Anak</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Penghasilan">
+        <input type="text" name="nama_anak" class="form-control" id="exampleFormControlInput1" placeholder="Nama Anak">
     </div>
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Tempat / Tanggal Lahir</label>
         <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="tempat" aria-label="tempat">
+              <input type="text" name="tempat" class="form-control" placeholder="tempat" aria-label="tempat">
             </div> /
             <div class="col">
-              <input type="date" class="form-control" placeholder="tanggal lahir" aria-label="tanggal lahir">
+              <input type="date" name="tanggal_lahir" class="form-control" placeholder="tanggal lahir" aria-label="tanggal lahir">
             </div>
           </div>
     </div>
     
     <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Jenis Kelamin</label>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-            <label class="form-check-label" for="inlineRadio1">Laki-Laki</label>
-          </div>
-          
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-            <label class="form-check-label" for="inlineRadio2">Perempuan</label>
-          </div>
-          
-    </div>
+      <label for="exampleFormControlInput1" class="form-label">Jenis Kelamin</label>
+      <select class="form-select" name="jenis_kelamin" aria-label="Default select example">
+          <option selected>Laki - Laki</option>
+          <option value="1">perempuan</option>
+      </select>
+  </div>
 
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Pekerjaan</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Penghasilan">
+        <input type="text" name="pekerjaan" class="form-control" id="exampleFormControlInput1" placeholder="Pekerjaan">
     </div>
 
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Alamat Rumah</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Penghasilan">
+        <input type="text" name="alamat_rumah" class="form-control" id="exampleFormControlInput1" placeholder="Alamat Rumah">
     </div>
 
 

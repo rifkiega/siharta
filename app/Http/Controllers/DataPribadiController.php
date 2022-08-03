@@ -17,7 +17,7 @@ class DataPribadiController extends Controller
     }
     
     public function tambah_data_pribadi(Request $request){
-        DataPribadiController::create([
+        DataPribadi::create([
                 'id' => $request->id,
                 'nama_lengkap' => $request->nama_lengkap,
                 'nomer_ktp' => $request->nomer_ktp,

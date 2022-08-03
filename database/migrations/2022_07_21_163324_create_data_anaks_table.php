@@ -16,10 +16,11 @@ return new class extends Migration
         Schema::create('data_anaks', function (Blueprint $table) {
             $table->id();
             $table->text('nama_anak')->nullable();
-            $table->date('tempat_tanggal_lahir')->nullable();
+            $table->string('tempat')->nullable();
+            $table->dateTime('tanggal_lahir')->nullable();
             $table->text('jenis_kelamin')->nullable();
             $table->text('pekerjaan')->nullable();
-            $table->bigInteger('alamat_rumah')->nullable();
+            $table->text('alamat_rumah')->nullable();
             $table->timestamps();
         });
     }

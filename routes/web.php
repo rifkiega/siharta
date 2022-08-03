@@ -89,39 +89,45 @@ Route::post('/tambah_harta_surat_berharga', [App\Http\Controllers\HartaSuratBerh
 
 //harta uang tunai
 Route::get('/index_harta_uang_tunai', [App\Http\Controllers\HartaUangTunaiController::class, 'harta_uang_tunai']);
-Route::post('/tambah_data_harta_uang_tunai', [App\Http\Controllers\HartaUangTunaiController::class, 'tambah_harta_uang_tunai']);
+Route::post('/tambah_harta_uang_tunai', [App\Http\Controllers\HartaUangTunaiController::class, 'tambah_harta_uang_tunai']);
 
 //harta piutang
 Route::get('/index_harta_piutang', [App\Http\Controllers\HartaPiutangController::class, 'harta_piutang']);
-Route::post('/tambah_data_piutang', [App\Http\Controllers\HartaPiutangController::class, 'tambah_harta_piutang']);
+Route::post('/tambah_harta_piutang', [App\Http\Controllers\HartaPiutangController::class, 'tambah_harta_piutang']);
 
 //harta hutang
 Route::get('/index_harta_hutang', [App\Http\Controllers\HartaHutangController::class, 'harta_hutang']);
-Route::post('/tambah_data_harta_hutang', [App\Http\Controllers\HartaHutangController::class, 'tambah_harta_hutang']);
+Route::post('/tambah_harta_hutang', [App\Http\Controllers\HartaHutangController::class, 'tambah_harta_hutang']);
 
 //penghasilan
     //1. penghasilan jabatan
-Route::get('/index_penghasilan_jabatan', [App\Http\Controllers\PenghasilanController::class, 'penghasilan_jabatan']);
-Route::post('/tambah_penghasilan_jabatan', [App\Http\Controllers\PenghasilanController::class, 'tambah_penghasilan_jabatan']);
+Route::get('/index_penghasilan_jabatan', [App\Http\Controllers\PenghasilanJabatanController::class, 'penghasilan_jabatan']);
+Route::post('/tambah_penghasilan_jabatan', [App\Http\Controllers\PenghasilanJabatanController::class, 'tambah_penghasilan_jabatan']);
   
 //2. penghasilan profesi
-Route::get('/index_penghasilan_profesi', [App\Http\Controllers\PenghasilanController::class, 'penghasilan_profesi']);
-Route::post('/tambah_penghasilan_profesi', [App\Http\Controllers\PenghasilanController::class, 'tambah_penghasilan_profesi']);
+Route::get('/index_penghasilan_profesi', [App\Http\Controllers\PenghasilanProfesiController::class, 'penghasilan_profesi']);
+Route::post('/tambah_penghasilan_profesi', [App\Http\Controllers\PenghasilanProfesiController::class, 'tambah_penghasilan_profesi']);
 
 //3. penghasilan hibah
-Route::get('/index_penghasilan_hibah', [App\Http\Controllers\PenghasilanController::class, 'penghasilan_hibah']);
-Route::post('/tambah_penghasilan_hibah', [App\Http\Controllers\PenghasilanController::class, 'penghasilan_hibah']);
+Route::get('/index_penghasilan_hibah', [App\Http\Controllers\PenghasilanHibahController::class, 'penghasilan_hibah']);
+Route::post('/tambah_penghasilan_hibah', [App\Http\Controllers\PenghasilanHibahController::class, 'tambah_penghasilan_hibah']);
 
 //data suami istri
 Route::get('/index_data_suamiistri', [App\Http\Controllers\DataKeluargaController::class, 'index_data_keluarga_suamiistri']);
 Route::post('/tambah_data_keluarga_suamiistri', [App\Http\Controllers\DataKeluargaController::class, 'tambah_data_keluarga_suamiistri']);
+
+//data anak
+Route::get('/index_data_anak', [App\Http\Controllers\DataKeluargaController::class, 'index_data_keluarga_anak']);
+Route::post('/tambah_data_keluarga_anak', [App\Http\Controllers\DataKeluargaController::class, 'tambah_data_keluarga_anak']);
+
 
 //pengeluaran
 Route::get('/index_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'index_pengeluaran']);
 Route::post('/tambah_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'tambah_pengeluaran']);
 
 //harta kekayaan
-Route::get('/index_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'index_pengeluaran']);
-Route::post('/tambah_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'tambah_pengeluaran']);
+//Route::get('/index_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'index_pengeluaran']);
+//Route::post('/tambah_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'tambah_pengeluaran']);
 
-//data anak
+
+
