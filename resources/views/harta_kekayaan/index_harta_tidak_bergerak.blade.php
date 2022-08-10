@@ -92,9 +92,10 @@
     </div>
 </div>
 
-<div class="mb-3">
+<div class="mt-3 mb-3">
   <label for="exampleFormControlInput1" class="form-label">Total NJOP Saat Pelaporan</label>
   <div class="input-group mb-3">
+      <span class="input-group-text">Rp.</span>
       <input required name="total_njop_saat_pelaporan" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="total_njop_saat_pelaporan">
   </div>
 </div>

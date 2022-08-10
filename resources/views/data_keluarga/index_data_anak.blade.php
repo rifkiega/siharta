@@ -8,7 +8,7 @@
 <div class="container-fluid px-4">
     <h1 class="mt-4">DATA ANAK</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Laporan Baru / Harta Kekayaan</li>
+        <li class="breadcrumb-item active">Laporan Baru / Data Anak</li>
     </ol>
 
     <ul class="nav nav-tabs">
@@ -16,7 +16,7 @@
           <a class="nav-link active" aria-current="page" href="/index_data_suamiistri">DATA SUAMI/ISTRI</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index_data_anak">DATA ANAK</a>
+            <a class="nav-link" aria-current="page" href="/index_data_anak">DATA ANAK</a>
           </li>
     </ul>
     

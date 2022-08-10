@@ -77,10 +77,14 @@
         <input required name="nilai_perolehan" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Nilai Perolehan">
     </div>
 
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Total Jual Saat Pelaporan</label>
-        <input required name="total_jual_saat_pelaporan" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nilai Jual Saat Pelaporan">
+    <div class="mt-3 mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Total jual Saat Pelaporan</label>
+      <div class="input-group mb-3">
+          <span class="input-group-text">Rp.</span>
+          <input required name="total_jual_saat_pelaporan" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="total_jual_saat_pelaporan">
+      </div>
     </div>
+    
 
     <div class="mb-3">
         <center>

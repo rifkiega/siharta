@@ -70,11 +70,13 @@
     </div>
 </div>
     
-<div class="mb-3">
+<div class="mt-3 mb-3">
   <label for="exampleFormControlInput1" class="form-label">Saldo Saat Pelaporan</label>
   <div class="input-group mb-3">
-      <input required name="saldo_saat_pelaporan" type="saldo_saat_pelaporan" class="form-control" id="exampleFormControlInput1"  placeholder="saldo_saat_pelaporan">
+      <span class="input-group-text">Rp.</span>
+      <input required name="saldo_saat_pelaporan" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="Saldo Saat Pelaporan">
   </div>
+</div>
 </div>
     <div class="mb-3">
         <center>

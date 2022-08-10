@@ -67,10 +67,13 @@
         <input type="text" name="nomer_rekening" class="form-control" id="exampleFormControlInput1" placeholder="Nomer Rekening / Polis">
     </div>
 
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Saldo Saat Pelaporan</label>
-        <input type="text" name="saldo_saat_pelaporan" class="form-control" id="exampleFormControlInput1" placeholder="Saldo Saat Pelaporan">
-    </div>
+    <div class="mt-3 mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Saldo Saat Pelaporan</label>
+      <div class="input-group mb-3">
+          <span class="input-group-text">Rp.</span>
+          <input required name="saldo_saat_pelaporan" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="Saldo Saat Pelaporan">
+      </div>
+  </div>
 
     <div class="mb-3">
         <center>

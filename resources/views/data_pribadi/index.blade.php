@@ -117,7 +117,19 @@
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Eselon</label>
         <select class="form-select" name="eselon" aria-label="Default select example">
+            <option selected>I.A</option>
+            <option selected>I.B</option>
+            <option selected>II.A</option>
+            <option selected>II.B</option>
+            <option selected>III.A</option>
+            <option selected>III.B</option>
+            <option selected>IV.A</option>
+            <option selected>IV.B</option>
+            <option selected>V.A</option>
+            <option selected>V.B</option>
             <option selected>STAFF/FUNGSIONAL UMUM</option>
+            <option selected>STAFF/FUNGSIONAL TERTENTU AHLI</option>
+            <option selected>STAFF/FUNGSIONAL TERTENTU TERAMPIL</option>
         </select>
     </div>
 
@@ -150,14 +162,14 @@
         </div>
         <label for="exampleFormControlInput1" class="form-label">Kantor :</label>
         <div class="input-group mb-3">
-            <input name="kantor" type="text" class="form-control" name="kantor" id="exampleFormControlInput1"  placeholder="kantor">
+            <input name="kantor" type="text" class="form-control" name="kantor" id="exampleFormControlInput1"  placeholder="Nama Kantor">
         </div>
         <div class="row">
             <div class="col">
-              <input type="text" class="form-control" name="alamat" placeholder="alamat" aria-label="alamat">
+              <input type="text" class="form-control" name="alamat" placeholder="Alamat Kantor" aria-label="alamat">
             </div> 
             <div class="col">
-              <input type="text" class="form-control" name="kode_pos_kantor" placeholder="kode pos" aria-label="kode pos">
+              <input type="text" class="form-control" name="kode_pos_kantor" placeholder="Kode Pos Kantor" aria-label="kode pos">
             </div>
         </div>
         <label for="exampleFormControlInput1" class="form-label">Rumah :</label>
@@ -166,10 +178,10 @@
         </div>
         <div class="row">
             <div class="col">
-              <input type="text" class="form-control" name="alamat" placeholder="alamat" aria-label="alamat">
+              <input type="text" class="form-control" name="alamat" placeholder="Alamat Rumah" aria-label="alamat">
             </div> 
             <div class="col">
-              <input type="text" class="form-control" name="kode_pos_rumah" placeholder="kode pos" aria-label="kode pos">
+              <input type="text" class="form-control" name="kode_pos_rumah" placeholder="Kode Pos Rumah" aria-label="kode pos">
             </div>
         </div>
     </div> 

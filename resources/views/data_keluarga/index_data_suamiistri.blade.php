@@ -8,12 +8,12 @@
 <div class="container-fluid px-4">
     <h1 class="mt-4">DATA KELUARGA</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Laporan Baru / Harta Kekayaan</li>
+        <li class="breadcrumb-item active">Laporan Baru / Data Suami Istri</li>
     </ol>
 
     <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index_data_suamiistri">DATA SUAMI/ISTRI</a>
+          <a class="nav-link" aria-current="page" href="/index_data_suamiistri">DATA SUAMI/ISTRI</a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/index_data_anak">DATA ANAK</a>
@@ -55,12 +55,15 @@
 
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Penghasilan Pertahun</label>
-        <input required name="penghasilan_pertahun" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Penghasilan">
-    </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Rp.</span>
+            <input required name="penghasilan_pertahun" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="penghasilan_pertahun">
+        </div>
+      </div>
 
     <div class="mt-3 mb-3">
         <label for="exampleFormControlInput1" class="form-label">Alamat Rumah</label>
-        <input required name="alamat_rumah" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jenis Penghasilan">
+        <input required name="alamat_rumah" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Alamat Rumah">
     </div>
 
 

@@ -8,12 +8,12 @@
 <div class="container-fluid px-4">
     <h1 class="mt-4">PENGELUARAN</h1>
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Laporan Baru / Harta Kekayaan</li>
+        <li class="breadcrumb-item active">Laporan Baru / Pengeluaran</li>
     </ol>
 
     <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index_pengeluaran">PENGELUARAN</a>
+          <a class="nav-link" aria-current="page" href="/index_pengeluaran">PENGELUARAN</a>
         </li>
     </ul>
     
@@ -21,15 +21,21 @@
     <form action="/tambah_pengeluaran" method="POST">
         @csrf
 
-    <div class="mt-3 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Pengeluaran Rutin</label>
-        <input required name="pengeluaran_rutin" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Atas Nama">
-    </div>
+        <div class="mt-3 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Pengeluaran Rutin</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Rp.</span>
+                <input required name="pengeluaran_rutin" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="Pengeluaran Rutin">
+            </div>
+        </div>
 
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Pengeluaran Lainnya</label>
-        <input required name="pengeluaran_lainnya" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Hubungan Keluarga / Relasi">
-    </div>
+        <div class="mt-3 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Pengeluaran Lainnya</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Rp.</span>
+                <input required name="pengeluaran_lainnya" type="number" class="form-control" id="exampleFormControlInput1"  placeholder="Pengeluaran Lainnya">
+            </div>
+        </div>
     
     <div class="mb-3">
         <center>
