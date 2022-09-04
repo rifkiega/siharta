@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('nama_anak')->nullable();
             $table->string('tempat')->nullable();
             $table->dateTime('tanggal_lahir')->nullable();
-            $table->text('jenis_kelamin')->nullable();
+            $table->string('jenis_kelamin')->nullable();
             $table->text('pekerjaan')->nullable();
             $table->text('alamat_rumah')->nullable();
             $table->timestamps();

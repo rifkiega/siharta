@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\PenghasilanHibah;
+use App\Models\Laporan;
 use Illuminate\Http\Request;
 
 class PenghasilanHibahController extends Controller
@@ -22,6 +23,12 @@ class PenghasilanHibahController extends Controller
             'total_penghasilan_bersih' => $request->total_penghasilan_bersih,
         ]);
 
-        return back();
+        Laporan::create([
+            'user_id' => auth()->user()->id,
+            'type' => 'Penghasilan Profesi',
+            'status' => 1,
+        ]);
+
+        return redirect('index_penghasilan_hibah')->with('success', 'Data berhasil ditambahkan!');
     }
 }

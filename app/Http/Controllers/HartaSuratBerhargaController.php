@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\SuratBerharga;
+use App\Models\Laporan;
 use Illuminate\Http\Request;
 
 class HartaSuratBerhargaController extends Controller
@@ -14,9 +15,6 @@ class HartaSuratBerhargaController extends Controller
         $user = auth()->user();
         return view('harta_kekayaan.index_harta_surat_berharga', compact('user'));
     }
-
-
-
     
     public function tambah_harta_surat_berharga(Request $request)
     {
@@ -27,7 +25,14 @@ class HartaSuratBerhargaController extends Controller
             'jumlah_kepemilikan' => $request->jumlah_kepemilikan,
             'nama_perusahaan' => $request->nama_perusahaan,
             'nilai_jual_saat_pelaporan' => $request->nilai_jual_saat_pelaporan,      
-       ]);
-         return "Berhasil ditambahkan";
+        ]);
+
+        Laporan::create([
+            'user_id' => auth()->user()->id,
+            'type' => 'Harta Surat Berharga',
+            'status' => 1,
+        ]);
+
+        return redirect('index_harta_surat_berharga')->with('success', 'Data berhasil ditambahkan!');
     }
 }

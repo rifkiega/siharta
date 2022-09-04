@@ -18,34 +18,37 @@ class UserSeeder extends Seeder
         $admin = User::create([
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
+            'alamat' => 'Desa Lohbener, Kab Indramayu',
+            'no_telp' => '089776129453',
             'password' => bcrypt('12345678'),
-        ]);    
+        ]);
+        
+        $admin->assignRole('admin');
 
         $admin = User::create([
-            'name' => 'Admin',
-            'email' => 'admon@gmail.com',
+            'name' => 'Anastasya',
+            'email' => 'pelapor@gmail.com',
+            'alamat' => 'Desa Patrol, Kab Indramayu',
+            'no_telp' => '089776129453',
             'password' => bcrypt('123456789'),
         ]);
 
-        $admin->assignRole('admin');
+        $admin->assignRole('pelapor');
 
-        $dosen = User::create([
-            'name' => 'Dosen',
-            'email' => 'dosen@gmail.com',
-            'password' => bcrypt('12345678'),
-        ]);
+        // $dosen = User::create([
+        //     'name' => 'Dosen',
+        //     'email' => 'dosen@gmail.com',
+        //     'password' => bcrypt('12345678'),
+        // ]);
 
-        $dosen->assignRole('dosen');
+        // $dosen->assignRole('dosen');
         
-        $wadir = User::create([
-            'name' => 'wadir',
-            'email' => 'wadir@gmail.com',
-            'password' => bcrypt('12345678'),
-        ]);
+        // $wadir = User::create([
+        //     'name' => 'wadir',
+        //     'email' => 'wadir@gmail.com',
+        //     'password' => bcrypt('12345678'),
+        // ]);
 
-        $wadir->assignRole('wadir');
-
-
-        
+        // $wadir->assignRole('wadir');
     }
 }

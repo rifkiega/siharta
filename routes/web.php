@@ -8,6 +8,7 @@ use App\Http\Controllers\PenghasilanController;
 use App\Http\Controllers\PengeluaranController;
 use App\Http\Controllers\DataKeluargaController;
 use App\Http\Controllers\HartaTidakBergerakController;
+use App\Http\Controllers\DataUserController;
 
 
 use Illuminate\Support\Facades\Auth;
@@ -44,6 +45,7 @@ Route::get('/logout', function(){
 
 // Auth::routes();
 Auth::routes();
+Route::get('/admin', [App\Http\Controllers\DashboardController::class, 'index'])->name('admin');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -63,9 +65,11 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 //profile
 Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'profile']);
 
-//data pribadi
-Route::get('/index_data_pribadi', [App\Http\Controllers\DataPribadiController::class, 'index']);
+// data pribadi
+Route::get('/index_data_pribadi', [App\Http\Controllers\DataPribadiController::class, 'index'])->name('indexPribadi');
+// Route::get('/cetak_data_pribadi', [App\Http\Controllers\DataPribadiController::class, 'cetak_data_pribadi']);
 Route::post('/tambah_data_pribadi', [App\Http\Controllers\DataPribadiController::class, 'tambah_data_pribadi']);
+Route::get('/print_data_pribadi', [App\Http\Controllers\DataPribadiController::class, 'print']);
 
 //harta tidak bergerak
 Route::get('/index_harta_tidak_bergerak', [App\Http\Controllers\HartaTidakBergerakController::class, 'harta_tidak_bergerak']);
@@ -103,10 +107,13 @@ Route::post('/tambah_harta_hutang', [App\Http\Controllers\HartaHutangController:
     //1. penghasilan jabatan
 Route::get('/index_penghasilan_jabatan', [App\Http\Controllers\PenghasilanJabatanController::class, 'penghasilan_jabatan']);
 Route::post('/tambah_penghasilan_jabatan', [App\Http\Controllers\PenghasilanJabatanController::class, 'tambah_penghasilan_jabatan']);
+Route::get('/print_penghasilan_jabatan', [App\Http\Controllers\PenghasilanJabatanController::class, 'printhasiljabatan']);
+
   
 //2. penghasilan profesi
 Route::get('/index_penghasilan_profesi', [App\Http\Controllers\PenghasilanProfesiController::class, 'penghasilan_profesi']);
 Route::post('/tambah_penghasilan_profesi', [App\Http\Controllers\PenghasilanProfesiController::class, 'tambah_penghasilan_profesi']);
+Route::get('/print_penghasilan_profesi', [App\Http\Controllers\PenghasilanProfesiController::class, 'printhasilprofesis']);
 
 //3. penghasilan hibah
 Route::get('/index_penghasilan_hibah', [App\Http\Controllers\PenghasilanHibahController::class, 'penghasilan_hibah']);
@@ -115,15 +122,26 @@ Route::post('/tambah_penghasilan_hibah', [App\Http\Controllers\PenghasilanHibahC
 //data suami istri
 Route::get('/index_data_suamiistri', [App\Http\Controllers\DataKeluargaController::class, 'index_data_keluarga_suamiistri']);
 Route::post('/tambah_data_keluarga_suamiistri', [App\Http\Controllers\DataKeluargaController::class, 'tambah_data_keluarga_suamiistri']);
+Route::get('/print_data_suamiistri', [App\Http\Controllers\DataKeluargaController::class, 'printsuamiistri']);
 
 //data anak
 Route::get('/index_data_anak', [App\Http\Controllers\DataKeluargaController::class, 'index_data_keluarga_anak']);
 Route::post('/tambah_data_keluarga_anak', [App\Http\Controllers\DataKeluargaController::class, 'tambah_data_keluarga_anak']);
+Route::get('/print_data_anak', [App\Http\Controllers\DataKeluargaController::class, 'printanak']);
 
 
 //pengeluaran
 Route::get('/index_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'index_pengeluaran']);
 Route::post('/tambah_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'tambah_pengeluaran']);
+Route::get('/print_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'printpengeluaran']);
+
+//data user
+Route::get('/index_user', [App\Http\Controllers\DataUserController::class, 'index']);
+Route::resource('users',DataUserController::class);
+
+
+
+
 
 //harta kekayaan
 //Route::get('/index_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'index_pengeluaran']);

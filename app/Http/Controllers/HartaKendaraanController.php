@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\HartaBergerakKendaraan;
+use App\Models\Laporan;
 use Illuminate\Http\Request;
 
 class HartaKendaraanController extends Controller
@@ -27,7 +28,13 @@ class HartaKendaraanController extends Controller
             'hubungan_keluarga' => $request->hubungan_keluarga,
             'nilai_perolehan' => $request->nilai_perolehan,
             'total_jual_saat_pelaporan' => $request->total_jual_saat_pelaporan,      
-       ]);
-         return "Berhasil ditambahkan";
+        ]);
+
+        Laporan::create([
+            'user_id' => auth()->user()->id,
+            'type' => 'Harta Kendaraan',
+            'status' => 1,
+        ]);
+        return redirect('index_harta_kendaraan')->with('success', 'Data berhasil ditambahkan!');
     }
 }

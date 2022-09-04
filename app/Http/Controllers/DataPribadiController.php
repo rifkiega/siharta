@@ -10,13 +10,28 @@ class DataPribadiController extends Controller
 {
 
    // data pribadi
+
+   public function print()
+    {
+        $datas = DataPribadi::get();
+        return view('data_pribadi.print_data_view', compact('datas'));
+    }
+
+
     public function index()
     {
         $user = auth()->user();
         return view('data_pribadi.index', compact('user'));
     }
+
+    public function cetak_data_pribadi()
+    {
+        $cetakpribadi = auth()->user();
+        return view('data_pribadi.cetak_data_pribadi', compact('cetakpribadi'));
+    }
     
-    public function tambah_data_pribadi(Request $request){
+    public function tambah_data_pribadi(Request $request)
+    {
         DataPribadi::create([
                 'id' => $request->id,
                 'nama_lengkap' => $request->nama_lengkap,
@@ -37,15 +52,14 @@ class DataPribadiController extends Controller
                 'rumah' => $request->rumah,
                 'kode_pos_rumah' => $request->kode_pos_rumah,
                 'alamat' => $request->alamat,
-                'nomer telephon' => $request->nomer_telephon,
+                'nomer_telephon' => $request->nomer_telephon,
                 'npwp' => $request->npwp,      
                 'timestamps' => $request,
                 ]);
 
-    //  return back();
-    return "Berhasil ditambahkan";
-
-}
+        //  return back();
+        return redirect('index_data_pribadi')->with('success', 'Data berhasil ditambahkan!');
+    }
 
     /**
      * Show the form for creating a new resource.

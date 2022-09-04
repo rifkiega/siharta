@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\HartaTidakBergerak;
 use Illuminate\Http\Request;
+use App\Models\HartaTidakBergerak;
+use App\Models\Laporan;
 
 class HartaTidakBergerakController extends Controller
 {
@@ -14,6 +15,7 @@ class HartaTidakBergerakController extends Controller
         $user = auth()->user();
         return view('harta_kekayaan.index_harta_tidak_bergerak', compact('user'));
     }
+
     public function tambah_harta_tidak_bergerak(Request $request)
     {
         HartaTidakBergerak::create([
@@ -21,13 +23,19 @@ class HartaTidakBergerakController extends Controller
             'luas_tanah' => $request->luas_tanah,
             'atas_nama' => $request->atas_nama,
             'alamat' => $request->alamat,
-            'tahun_perolehan' => $request->tahun_perolehan,  
+            'tahun_perolehan' => $request->tahun_perolehan,
             'harga_peroleh' => $request->harga_peroleh,
-            'total_njop_saat_pelaporan' => $request->total_njop_saat_pelaporan,       
-            
-            ]);
-    return "Berhasil ditambahkan";
-    }   
+            'total_njop_saat_pelaporan' => $request->total_njop_saat_pelaporan,
+        ]);
+
+        Laporan::create([
+            'user_id' => auth()->user()->id,
+            'type' => 'Harta Tidak Bergerak',
+            'status' => 1,
+        ]);
+        
+        return redirect('index_harta_tidak_bergerak')->with('success', 'Data berhasil ditambahkan!');
+    }
 
     /**
      * Show the form for creating a new resource.

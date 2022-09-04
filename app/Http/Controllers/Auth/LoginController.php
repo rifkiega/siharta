@@ -42,12 +42,10 @@ class LoginController extends Controller
     protected function authenticated(Request $request, $user)
     {
         if ($user->hasRole('admin')) {
+            return redirect('/admin');
+        } else if ($user->hasRole('pelapor')) {
             return redirect('/home');
-        } else if ($user->hasRole('dosen')) {
-            return redirect('/home');
-        } else if ($user->hasRole('wadir')) {
-            return redirect('/home');
-        } 
+        }
 
         return redirect()->route('login')->with('error', 'email and password are wrong');
     }

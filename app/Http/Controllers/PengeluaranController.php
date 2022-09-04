@@ -3,10 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pengeluaran;
+use App\Models\Laporan;
 use Illuminate\Http\Request;
 
 class PengeluaranController extends Controller
 {
+    public function printpengeluaran()
+    {
+        $pengeluaran = Pengeluaran::get();
+        return view('pengeluaran.print_data_view', compact('pengeluaran'));
+    }
+
     public function index_pengeluaran()
     {
         // return view('home');
@@ -18,7 +25,14 @@ class PengeluaranController extends Controller
         Pengeluaran::create([ 
             'pengeluaran_rutin' => $request->pengeluaran_rutin,
             'pengeluaran_lainnya' => $request->pengeluaran_lainnya,
-        ]);    
-        return "Berhasil ditambahkan";
+        ]);   
+
+        Laporan::create([
+            'user_id' => auth()->user()->id,
+            'type' => 'Laporan Pengeluaran',
+            'status' => 1,
+        ]);
+
+        return redirect('index_pengeluaran')->with('success', 'Data berhasil ditambahkan!');
     }
 }

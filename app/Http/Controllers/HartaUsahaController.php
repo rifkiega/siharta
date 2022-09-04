@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\HartaBergerakUsaha;
+use App\Models\Laporan;
 use Illuminate\Http\Request;
 
 class HartaUsahaController extends Controller
@@ -28,7 +29,14 @@ class HartaUsahaController extends Controller
             'omzet_pertahun' => $request->omzet_pertahun,
             'penghasilan_bersih_pertahun' => $request->penghasilan_bersih_pertahun,
             'nilai_saat_pelaporan' => $request->nilai_saat_pelaporan,      
-       ]);
-         return "Berhasil ditambahkan";
+        ]);
+
+        Laporan::create([
+            'user_id' => auth()->user()->id,
+            'type' => 'Harta Usaha',
+            'status' => 1,
+        ]);
+        
+        return redirect('index_harta_usaha')->with('success', 'Data berhasil ditambahkan!');
     }
 }

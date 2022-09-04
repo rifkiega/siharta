@@ -2,11 +2,11 @@
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
-                <div class="sb-sidenav-menu-heading">Core</div>
+                {{-- <div class="sb-sidenav-menu-heading">Core</div>
                 <a class="nav-link" href="/home">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Dashboard
-                </a>
+                </a> --}}
                 {{-- <div class="sb-sidenav-menu-heading">Interface</div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -52,35 +52,28 @@
                 </div> --}}
                 <div class="sb-sidenav-menu-heading">Menu</div>
                 <a class="nav-link" href="/index_data_pribadi">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-users"></i></div>
                    Data Pribadi
                 </a>
-                {{-- <a class="nav-link" href="/data_pribadi">
-                    <div class="dropdown"><i class="fas fa-table"></i></div>
-                    Harta Kekayaan
-                </a> --}}
                 <a class="nav-link" href="/index_harta_tidak_bergerak">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-car"></i></div>
                     Harta Kekayaan
                 </a>
                 <a class="nav-link " href="/index_penghasilan_jabatan">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-credit-card-alt"></i></div>
                     Penghasilan
                 </a>
                 <a class="nav-link" href="/index_data_suamiistri">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-child"></i></div>
                     Data Keluarga
                 </a>
                 <a class="nav-link" href="/index_pengeluaran">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-cart-arrow-down"></i></div>
                     Pengeluaran
                 </a>
-                <a class="nav-link" href="/#">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                    Selesai
-                </a>
+
                 <a class="nav-link" href="/logout">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-sign-out"></i></div>
                     Logout
                 </a>
             </div>

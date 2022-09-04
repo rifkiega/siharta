@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Piutang;
+use App\Models\Laporan;
 use Illuminate\Http\Request;
 
 class HartaPiutangController extends Controller
@@ -15,9 +16,6 @@ class HartaPiutangController extends Controller
         return view('harta_kekayaan.index_harta_piutang', compact('user'));
     }
 
-
-
-
     public function tambah_harta_piutang(Request $request)
     {
         Piutang::create ([
@@ -26,7 +24,14 @@ class HartaPiutangController extends Controller
             'nama_bank_lembaga_penyimpanan' => $request->nama_bank_lembaga_penyimpanan,
             'no_rekening' => $request->no_rekening,
             'saldo_saat_pelaporan' => $request->saldo_saat_pelaporan,      
-       ]);
-         return "Berhasil ditambahkan";
+        ]);
+        
+        Laporan::create([
+            'user_id' => auth()->user()->id,
+            'type' => 'Harta Piutang',
+            'status' => 1,
+        ]);
+
+        return redirect('index_harta_piutang')->with('success', 'Data berhasil ditambahkan!');
     }
 }

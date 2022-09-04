@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\UangTunai;
+use App\Models\Laporan;
 use Illuminate\Http\Request;
 
 class HartaUangTunaiController extends Controller
@@ -15,8 +16,6 @@ class HartaUangTunaiController extends Controller
         return view('harta_kekayaan.index_harta_uang_tunai', compact('user'));
     }
 
-
-
     public function tambah_harta_uang_tunai(Request $request)
     {
         UangTunai::create ([
@@ -26,7 +25,14 @@ class HartaUangTunaiController extends Controller
             'nama_bank_lembaga_penyimpanan' => $request->nama_bank_lembaga_penyimpanan,
             'nomer_rekening' => $request->nomer_rekening,
             'saldo_saat_pelaporan' => $request->saldo_saat_pelaporan,      
-       ]);
-         return "Berhasil ditambahkan";
+        ]);
+
+        Laporan::create([
+            'user_id' => auth()->user()->id,
+            'type' => 'Harta Uang Tunai',
+            'status' => 1,
+        ]);
+
+        return redirect('index_harta_uang_tunai')->with('success', 'Data berhasil ditambahkan!');
     }
 }

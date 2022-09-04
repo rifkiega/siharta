@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class DataPribadi extends Model
 {
     use HasFactory;
+    public $table = 'data_pribadis';
 
     protected $guarded = ['id'];
 }

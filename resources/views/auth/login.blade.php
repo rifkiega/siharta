@@ -83,9 +83,9 @@
         <meta name="author" content="" />
         <title>Login - SB Admin</title>
         <link href="{{ asset('template-admin/css/styles.css') }}" rel="stylesheet" />
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="htps://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
-    <body class="bg-primary">
+    <body style="background-image: url({{ ('https://cdn.timesmedia.co.id/images/2021/06/28/Polindra-Indramayu.jpg') }}); background-size: cover;">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -134,7 +134,7 @@
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
+                                        <div class="small"><a href="{{ route('register') }}">Belum punya akun? Register!</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@
                 </main>
             </div>
             <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light mt-auto">
+                {{-- <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; Your Website 2022</div>
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                </footer>
+                </footer> --}}
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

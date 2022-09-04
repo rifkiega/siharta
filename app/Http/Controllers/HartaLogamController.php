@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\HartaBergerakLogam;
+use App\Models\Laporan;
 use Illuminate\Http\Request;
 
 class HartaLogamController extends Controller
@@ -15,8 +16,6 @@ class HartaLogamController extends Controller
         return view('harta_kekayaan.index_harta_logam', compact('user'));
     }
 
-
-
     public function tambah_harta_logam(Request $request)
     {
         HartaBergerakLogam::create ([
@@ -27,7 +26,14 @@ class HartaLogamController extends Controller
             'tahun_perolehan' => $request->tahun_perolehan,
             'harga_perolehan' => $request->harga_perolehan,
             'nilai_jual_saat_pelaporan' => $request->nilai_jual_saat_pelaporan,      
-       ]);
-         return "Berhasil ditambahkan";
+        ]);
+
+        Laporan::create([
+            'user_id' => auth()->user()->id,
+            'type' => 'Harta Logam',
+            'status' => 1,
+        ]);
+
+        return redirect('index_harta_logam')->with('success', 'Data berhasil ditambahkan!');
     }
 }
