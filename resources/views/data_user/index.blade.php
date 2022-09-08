@@ -28,7 +28,8 @@
                     <th width="280px"class="text-center">Alamat</th>
                     <th width="280px"class="text-center">Nomer Telepon</th>
                     <th width="280px"class="text-center">Status</th>
-                    {{-- <th width="280px"class="text-center">Aksi</th> --}}
+                    <th width="280px"class="text-center">Tanggal Pelaporan</th>
+                    <th width="280px"class="text-center">Aksi</th>
                 </tr>
                 @php
                     $i = 0;
@@ -40,6 +41,7 @@
                     <td class="text-center">{{ $laporan->type }}</td>
                     <td class="text-center">{{ $laporan->user->alamat }}</td>
                     <td class="text-center">(+62) {{ $laporan->user->no_telp }}</td>
+                    <td class="text-center">{{\Carbon\Carbon::parse($laporan->created_at)->isoFormat('D MMMM Y')}}</td>
                     <td class="text-center">
                         @if ($laporan->status == '0')
                             <span class="badge badge-danger">Belum melaporkan</span>
@@ -47,7 +49,7 @@
                             <span class="badge badge-success">Berhasil melaporkan</span>
                         @endif
                     </td>
-                    {{-- <td class="text-center"><a href=""><i class="bi bi-eye"></i></a></td> --}}
+                    <td class="text-center"><a href="{{ route('users.show', $laporan->id)  }}"><i class="bi bi-eye"></i></a></td>
                 </tr>
                 @endforeach
             </table>

@@ -83,7 +83,7 @@
                     <label for="exampleFormControlInput1" class="form-label">Total jual Saat Pelaporan</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text">Rp.</span>
-                        <input required name="total_jual_saat_pelaporan" type="number" class="form-control"
+                        <input required name="nilai_jual_saat_pelaporan" type="number" class="form-control"
                             id="exampleFormControlInput1" placeholder="total_jual_saat_pelaporan">
                     </div>
                 </div>

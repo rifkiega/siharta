@@ -22,12 +22,22 @@ class UserSeeder extends Seeder
             'no_telp' => '089776129453',
             'password' => bcrypt('12345678'),
         ]);
-        
+
         $admin->assignRole('admin');
 
         $admin = User::create([
             'name' => 'Anastasya',
             'email' => 'pelapor@gmail.com',
+            'alamat' => 'Desa Patrol, Kab Indramayu',
+            'no_telp' => '089776129453',
+            'password' => bcrypt('123456789'),
+        ]);
+
+        $admin->assignRole('pelapor');
+
+        $admin = User::create([
+            'name' => 'Rifki Ega S',
+            'email' => 'pelapor2@gmail.com',
             'alamat' => 'Desa Patrol, Kab Indramayu',
             'no_telp' => '089776129453',
             'password' => bcrypt('123456789'),
@@ -42,7 +52,7 @@ class UserSeeder extends Seeder
         // ]);
 
         // $dosen->assignRole('dosen');
-        
+
         // $wadir = User::create([
         //     'name' => 'wadir',
         //     'email' => 'wadir@gmail.com',

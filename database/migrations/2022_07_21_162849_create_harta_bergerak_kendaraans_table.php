@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('harta_bergerak_kendaraans', function (Blueprint $table) {
             $table->id();
             $table->text('jenis_tranportasi')->nullable();
-            $table->bigInteger('nomer_kendaraan')->nullable();
+            $table->string('nomer_kendaraan')->nullable();
             $table->string('merk_model')->nullable();
             $table->date('tahun_pembuatan')->nullable();
             $table->text('atas_nama')->nullable();

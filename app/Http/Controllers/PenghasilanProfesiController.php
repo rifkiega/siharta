@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\PenghasilanProfesi;
 use App\Models\Laporan;
 use Illuminate\Http\Request;
+use App\Models\DetailLaporan;
 
 class PenghasilanProfesiController extends Controller
 {
@@ -23,7 +24,7 @@ class PenghasilanProfesiController extends Controller
     //
     public function tambah_penghasilan_profesi(Request $request)
     {
-        PenghasilanProfesi::create([
+        $penghasilanProfesi = PenghasilanProfesi::create([
             'jenis_penghasilan' => $request->jenis_penghasilan,
             'lembaga' => $request->lembaga,
             'penghasilan_bersih' => $request->penghasilan_bersih,
@@ -33,6 +34,14 @@ class PenghasilanProfesiController extends Controller
             'user_id' => auth()->user()->id,
             'type' => 'Penghasilan Profesi',
             'status' => 1,
+        ]);
+
+        DetailLaporan::create([
+            'laporan_id' => $penghasilanProfesi->id,
+            'isi_1' => $request->jenis_penghasilan,
+            'isi_2' => $request->lembaga,
+            'isi_3' => $request->penghasilan_bersih,
+            'type' => 'Penghasilan Profesi',
         ]);
 
         return redirect('index_penghasilan_profesi')->with('success', 'Data berhasil ditambahkan!');
