@@ -27,7 +27,6 @@
         <div class="card-body">
             <form action="/tambah_data_pribadi" method="POST">
                 @csrf
-
                 <div class="mt-3 mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
                     <div class="input-group mb-3">
@@ -216,7 +215,7 @@
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nomer Telephon</label>
                     <div class="input-group mb-3">
-                        <input name="nomer_telephon" type="number" class="form-control" name="nomer_telephon"
+                        <input name="nomer_telephon" type="number" class="form-control"
                             id="exampleFormControlInput1" placeholder="Nomor Telepon">
                     </div>
                 </div>

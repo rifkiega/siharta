@@ -109,7 +109,7 @@ Route::get('/index_penghasilan_jabatan', [App\Http\Controllers\PenghasilanJabata
 Route::post('/tambah_penghasilan_jabatan', [App\Http\Controllers\PenghasilanJabatanController::class, 'tambah_penghasilan_jabatan']);
 Route::get('/print_penghasilan_jabatan', [App\Http\Controllers\PenghasilanJabatanController::class, 'printhasiljabatan']);
 
-  
+
 //2. penghasilan profesi
 Route::get('/index_penghasilan_profesi', [App\Http\Controllers\PenghasilanProfesiController::class, 'penghasilan_profesi']);
 Route::post('/tambah_penghasilan_profesi', [App\Http\Controllers\PenghasilanProfesiController::class, 'tambah_penghasilan_profesi']);
@@ -139,13 +139,11 @@ Route::get('/print_pengeluaran', [App\Http\Controllers\PengeluaranController::cl
 Route::get('/index_user', [App\Http\Controllers\DataUserController::class, 'index']);
 Route::resource('users',DataUserController::class);
 
+Route::get('rekap-data', [App\Http\Controllers\PDFController::class, 'rekapData']);
+Route::post('rekap-data', [App\Http\Controllers\PDFController::class, 'detail'])->name('rekap.data');
 
-
-
+Route::get('create-pdf-file', [App\Http\Controllers\PDFController::class, 'index']);
 
 //harta kekayaan
 //Route::get('/index_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'index_pengeluaran']);
 //Route::post('/tambah_pengeluaran', [App\Http\Controllers\PengeluaranController::class, 'tambah_pengeluaran']);
-
-
-

@@ -71,7 +71,10 @@
                     <div class="sb-nav-link-icon"><i class="fa fa-cart-arrow-down"></i></div>
                     Pengeluaran
                 </a>
-
+                <a class="nav-link" href="/create-pdf-file">
+                    <div class="sb-nav-link-icon"><i class="fa fa-file-import"></i></div>
+                    Rekap LHKASN PDF
+                </a>
                 <a class="nav-link" href="/logout">
                     <div class="sb-nav-link-icon"><i class="fa fa-sign-out"></i></div>
                     Logout

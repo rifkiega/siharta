@@ -40,7 +40,7 @@ class HartaHutangController extends Controller
             'isi_3' => $request->nama_bank_lembaga_penyimpanan,
             'isi_4' => $request->no_rekening,
             'isi_5' => $request->saldo_saat_pelaporan,
-            'type' => 'Harta Piutang',
+            'type' => 'Harta Hutang',
         ]);
 
         return redirect('index_harta_hutang')->with('success', 'Data berhasil ditambahkan!');

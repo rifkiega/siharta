@@ -37,8 +37,7 @@
                 <div class="mt-3 mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Jenis Penghasilan</label>
                     <div class="input-group mb-3">
-                        <span class="input-group-text">Rp.</span>
-                        <input required name="jenis_penghasilan" type="number" class="form-control"
+                        <input required name="jenis_penghasilan" type="text" class="form-control"
                             id="exampleFormControlInput1" placeholder="jenis_penghasilan">
                     </div>
                 </div>

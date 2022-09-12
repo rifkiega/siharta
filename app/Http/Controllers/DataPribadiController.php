@@ -29,11 +29,11 @@ class DataPribadiController extends Controller
         $cetakpribadi = auth()->user();
         return view('data_pribadi.cetak_data_pribadi', compact('cetakpribadi'));
     }
-    
+
     public function tambah_data_pribadi(Request $request)
     {
         DataPribadi::create([
-                'id' => $request->id,
+                'user_id' => auth()->user()->id,
                 'nama_lengkap' => $request->nama_lengkap,
                 'nomer_ktp' => $request->nomer_ktp,
                 'jenis_kelamin' => $request->jenis_kelamin,
@@ -53,8 +53,7 @@ class DataPribadiController extends Controller
                 'kode_pos_rumah' => $request->kode_pos_rumah,
                 'alamat' => $request->alamat,
                 'nomer_telephon' => $request->nomer_telephon,
-                'npwp' => $request->npwp,      
-                'timestamps' => $request,
+                'npwp' => $request->npwp,
                 ]);
 
         //  return back();
@@ -79,9 +78,9 @@ class DataPribadiController extends Controller
      */
     public function store(Request $request)
     {
-    
+
         // DataPribadi::create($request->all());
-     
+
         return redirect()->route('DataPribadi.index')
                         ->with('success','Product created successfully.');
     }

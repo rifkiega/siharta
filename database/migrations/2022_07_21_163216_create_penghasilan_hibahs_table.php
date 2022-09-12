@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('penghasilan_hibahs', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('jenis_penghasilan')->nullable();
+            $table->text('jenis_penghasilan')->nullable();
             $table->text('alamat_pemberi_hibah')->nullable();
             $table->bigInteger('total_penghasilan_bersih')->nullable();
             $table->timestamps();

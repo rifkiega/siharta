@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('penghasilan_profesis', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('jenis_penghasilan')->nullable();
+            $table->text('jenis_penghasilan')->nullable();
             $table->text('lembaga')->nullable();
             $table->bigInteger('penghasilan_bersih')->nullable();
             $table->timestamps();

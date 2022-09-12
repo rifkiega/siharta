@@ -34,7 +34,7 @@ return new class extends Migration
             $table->bigInteger('kode_pos_kantor')->nullable();
             $table->text('rumah')->nullable();
             $table->bigInteger('kode_pos_rumah')->nullable();
-            $table->bigInteger('nomer telephon')->nullable();
+            $table->bigInteger('nomer_telephon')->nullable();
             $table->bigInteger('npwp')->nullable();
             $table->timestamps();
         });

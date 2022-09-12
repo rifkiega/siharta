@@ -55,8 +55,8 @@
                     <label for="exampleFormControlInput1" class="form-label">Jenis Kelamin</label>
                     <select class="form-select" name="jenis_kelamin" aria-label="Default select example">
                         <option selected>Jenis Kelamin</option>
-                        <option value="1">Laki - Laki</option>
-                        <option value="1">perempuan</option>
+                        <option value="Laki-laki">Laki - Laki</option>
+                        <option value="Perempuan">Perempuan</option>
                     </select>
                 </div>
 
