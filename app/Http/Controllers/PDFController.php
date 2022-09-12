@@ -21,6 +21,7 @@ class PDFController extends Controller
         return $pdf->download('LHKASN.pdf');
     }
 
+    // Rekap Data
     public function rekapData()
     {
         $user = User::whereHas(
@@ -31,12 +32,13 @@ class PDFController extends Controller
         return view ('rekap.index', compact('user'));
     }
 
+    // Rekap Data Berdasarkan Nama Pelapor
     public function detail(Request $request)
     {
         $id = [
             'id' => $request->user_id,
         ];
-        
+
         $pdf = PDF::loadView('rekap.detail', $id);
 
         return $pdf->download('LHKASN.pdf');

@@ -173,7 +173,7 @@
                 $totalHutang = App\Models\DetailLaporan::join('laporans', 'detail_laporans.laporan_id', '=', 'laporans.id')->where('laporans.user_id', auth()->user()->id)->where('detail_laporans.type', 'Harta Hutang')->sum('detail_laporans.isi_5');
                 $totalUangTunai = App\Models\DetailLaporan::join('laporans', 'detail_laporans.laporan_id', '=', 'laporans.id')->where('laporans.user_id', auth()->user()->id)->where('detail_laporans.type', 'Harta Uang Tunai')->sum('detail_laporans.isi_6');
                 $totalPiutang = App\Models\DetailLaporan::join('laporans', 'detail_laporans.laporan_id', '=', 'laporans.id')->where('laporans.user_id', auth()->user()->id)->where('detail_laporans.type', 'Harta Piutang')->sum('detail_laporans.isi_5');
-                
+
                 // ================== Penghasilan ================
                 $totalSuamiIstri = App\Models\DetailLaporan::join('laporans', 'detail_laporans.laporan_id', '=', 'laporans.id')->where('laporans.user_id', auth()->user()->id)->where('detail_laporans.type', 'Data Suami/Istri')->sum('detail_laporans.isi_4');
                 $totalPenghasilanProfesi = App\Models\DetailLaporan::join('laporans', 'detail_laporans.laporan_id', '=', 'laporans.id')->where('laporans.user_id', auth()->user()->id)->where('detail_laporans.type', 'Penghasilan Profesi')->sum('detail_laporans.isi_3');
@@ -190,31 +190,31 @@
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">I.1.</span> HARTA TIDAK
                     BERGERAK</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalHartaTidakBergerak, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">I.2.</span> HARTA BERGERAK
                     (MOBIL, MOTOR, DLL)</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalHartaBergerakTransportasi, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">I.3.</span> SURAT BERHARGA
                 </td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalSuratBerharga, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">I.4.</span> UANG TUNAI,
                     DEPOSITO, GIRO, TABUNGAN DAN KAS LAINNYA</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalUangTunai, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">I.5.</span> PIUTANG
                     (BARANG, UANG)</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalPiutang, 0)}}</td>
             </tr>
             <tr>
@@ -222,13 +222,13 @@
                     $subTotalHartaKekayaan = $totalHartaTidakBergerak + $totalHartaBergerakTransportasi + $totalSuratBerharga + $totalUangTunai + $totalPiutang;
                 @endphp
                 <td style="width: 85%; padding-left: 15rem; font-weight: bold">SUB TOTAL HARTA</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%; border-top: 1px solid;">{{number_format($subTotalHartaKekayaan, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;""><span style=" padding-right: 10px">I.6.</span> HUTANG<span
                         style=" padding-left: 12.57rem; font-weight: bold">(-)</span></td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%; border-bottom: 1px solid;">{{number_format($totalHutang, 0)}}</td>
             </tr>
             <tr>
@@ -236,7 +236,7 @@
                     $totalHartaKekayaan = $subTotalHartaKekayaan - $totalHutang
                 @endphp
                 <td style="width: 85%; padding-left: 15rem; font-weight: bold">SUB TOTAL HARTA KEKAYAAN</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalHartaKekayaan, 0)}}</td>
             </tr>
 
@@ -248,31 +248,31 @@
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.1.</span> PENGHASILAN
                     DARI JABATAN (PER TAHUN)</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalPenghasilanJabatan, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.2.</span> PENGHASILAN
                     DARI PROFESI / KEAHLIAN (PER TAHUN)</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalPenghasilanProfesi, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.3.</span> PENGHASILAN
                     DARI USAHA LAINNYA (PER TAHUN)</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">0</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.4.</span> PENGHASILAN
                     DARI HIBAH / LAINNYA</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalPenghasilanHibah, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.5.</span> PENGHASILAN
                     DARI ISTRI / SUAMI YANG BEKERJA</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalSuamiIstri, 0)}}</td>
             </tr>
             @php
@@ -280,7 +280,7 @@
             @endphp
             <tr>
                 <td style="width: 85%; padding-left: 15rem; font-weight: bold">TOTAL PENGHASILAN</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%; border-top: 1px solid;">{{number_format($subTotalPenghasilan, 0)}}</td>
             </tr>
             <tr>
@@ -290,13 +290,13 @@
             <tr>
                 <td style="width: 85%; padding-left: 58px;"><span style="padding-right: 5px">II.6.1.</span> PENGELUARAN
                     RUTIN<span style=" padding-left: 5rem; font-weight: bold">(-)</span></td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalPengeluaranRutin, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 58px;"><span style="padding-right: 5px">II.6.2.</span> PENGELUARAN
                     LAINNYA<span style=" padding-left: 4rem; font-weight: bold">(-)</span></td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%; border-bottom: 1px solid;">{{number_format($totalPengeluaranLainnya, 0)}}</td>
             </tr>
             @php
@@ -304,7 +304,7 @@
             @endphp
             <tr>
                 <td style="width: 85%; padding-left: 15rem; font-weight: bold">TOTAL PENGELUARAN</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($subTotalPengeluaran, 0)}}</td>
             </tr>
             @php
@@ -312,7 +312,7 @@
             @endphp
             <tr>
                 <td style="width: 85%; padding-left: 15rem; font-weight: bold">PENGHASILAN BERSIH</td>
-                <td style="width: 5%;">Rp.</td>
+                <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
                 <td style="width: 10%;">{{number_format($totalPenghasilanBersih, 0)}}</td>
             </tr>
         </table>
@@ -826,7 +826,7 @@
                 @php
                     $totalBersihPenghasilanJabatan += $item->isi_5;
                 @endphp
-            </tr>  
+            </tr>
             @endforeach
         </tbody>
         <tfoot>
@@ -949,7 +949,7 @@
                 @php
                     $totalBersihPenghasilanHibah += $item->isi_3;
                 @endphp
-            </tr> 
+            </tr>
             @endforeach
         </tbody>
         <tfoot>
@@ -996,7 +996,7 @@
                 @php
                     $totalBersihPenghasilanSuamiIstri += $item->isi_4;
                 @endphp
-            </tr>  
+            </tr>
             @endforeach
         </tbody>
         <tfoot>
@@ -1041,7 +1041,7 @@
                 <td>-</td>
                 <td>{{ $item->isi_3 }}</td>
                 <td>{{ $item->isi_5 }}</td>
-            </tr>  
+            </tr>
             @endforeach
         </tbody>
     </table>
