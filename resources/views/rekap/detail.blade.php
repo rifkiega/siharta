@@ -191,31 +191,31 @@
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">I.1.</span> HARTA TIDAK
                     BERGERAK</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalHartaTidakBergerak, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalHartaTidakBergerak, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">I.2.</span> HARTA BERGERAK
                     (MOBIL, MOTOR, DLL)</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalHartaBergerakTransportasi, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalHartaBergerakTransportasi, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">I.3.</span> SURAT BERHARGA
                 </td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalSuratBerharga, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalSuratBerharga, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">I.4.</span> UANG TUNAI,
                     DEPOSITO, GIRO, TABUNGAN DAN KAS LAINNYA</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalUangTunai, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalUangTunai, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">I.5.</span> PIUTANG
                     (BARANG, UANG)</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalPiutang, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalPiutang, 0)}}</td>
             </tr>
             <tr>
                 @php
@@ -223,13 +223,13 @@
                 @endphp
                 <td style="width: 85%; padding-left: 15rem; font-weight: bold">SUB TOTAL HARTA</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%; border-top: 1px solid;">{{number_format($subTotalHartaKekayaan, 0)}}</td>
+                <td style="width: 10%; text-align: right; border-top: 1px solid;">{{number_format($subTotalHartaKekayaan, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;""><span style=" padding-right: 10px">I.6.</span> HUTANG<span
                         style=" padding-left: 12.57rem; font-weight: bold">(-)</span></td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%; border-bottom: 1px solid;">{{number_format($totalHutang, 0)}}</td>
+                <td style="width: 10%; text-align: right; border-bottom: 1px solid;">{{number_format($totalHutang, 0)}}</td>
             </tr>
             <tr>
                 @php
@@ -237,7 +237,7 @@
                 @endphp
                 <td style="width: 85%; padding-left: 15rem; font-weight: bold">SUB TOTAL HARTA KEKAYAAN</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalHartaKekayaan, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalHartaKekayaan, 0)}}</td>
             </tr>
 
             {{-- ========================================================= PENGHASILAN ========================================================= --}}
@@ -249,31 +249,31 @@
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.1.</span> PENGHASILAN
                     DARI JABATAN (PER TAHUN)</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalPenghasilanJabatan, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalPenghasilanJabatan, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.2.</span> PENGHASILAN
                     DARI PROFESI / KEAHLIAN (PER TAHUN)</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalPenghasilanProfesi, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalPenghasilanProfesi, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.3.</span> PENGHASILAN
                     DARI USAHA LAINNYA (PER TAHUN)</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">0</td>
+                <td style="width: 10%; text-align: right;">0</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.4.</span> PENGHASILAN
                     DARI HIBAH / LAINNYA</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalPenghasilanHibah, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalPenghasilanHibah, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.5.</span> PENGHASILAN
                     DARI ISTRI / SUAMI YANG BEKERJA</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalSuamiIstri, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalSuamiIstri, 0)}}</td>
             </tr>
             @php
                 $subTotalPenghasilan = $totalPenghasilanJabatan + $totalPenghasilanProfesi + $totalPenghasilanHibah + $totalSuamiIstri;
@@ -281,7 +281,7 @@
             <tr>
                 <td style="width: 85%; padding-left: 15rem; font-weight: bold">TOTAL PENGHASILAN</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%; border-top: 1px solid;">{{number_format($subTotalPenghasilan, 0)}}</td>
+                <td style="width: 10%; text-align: right; border-top: 1px solid;">{{number_format($subTotalPenghasilan, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 25px;"><span style="padding-right: 10px">II.6.</span> PENGELUARAN
@@ -291,13 +291,13 @@
                 <td style="width: 85%; padding-left: 58px;"><span style="padding-right: 5px">II.6.1.</span> PENGELUARAN
                     RUTIN<span style=" padding-left: 5rem; font-weight: bold">(-)</span></td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalPengeluaranRutin, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalPengeluaranRutin, 0)}}</td>
             </tr>
             <tr>
                 <td style="width: 85%; padding-left: 58px;"><span style="padding-right: 5px">II.6.2.</span> PENGELUARAN
                     LAINNYA<span style=" padding-left: 4rem; font-weight: bold">(-)</span></td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%; border-bottom: 1px solid;">{{number_format($totalPengeluaranLainnya, 0)}}</td>
+                <td style="width: 10%; text-align: right; border-bottom: 1px solid;">{{number_format($totalPengeluaranLainnya, 0)}}</td>
             </tr>
             @php
                 $subTotalPengeluaran = $totalPengeluaranRutin + $totalPengeluaranLainnya;
@@ -305,7 +305,7 @@
             <tr>
                 <td style="width: 85%; padding-left: 15rem; font-weight: bold">TOTAL PENGELUARAN</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($subTotalPengeluaran, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($subTotalPengeluaran, 0)}}</td>
             </tr>
             @php
                 $totalPenghasilanBersih = $subTotalPenghasilan - $subTotalPengeluaran;
@@ -313,7 +313,7 @@
             <tr>
                 <td style="width: 85%; padding-left: 15rem; font-weight: bold">PENGHASILAN BERSIH</td>
                 <td style="width: 5%; padding-left: 25px; padding-right: 90px;">Rp.</td>
-                <td style="width: 10%;">{{number_format($totalPenghasilanBersih, 0)}}</td>
+                <td style="width: 10%; text-align: right;">{{number_format($totalPenghasilanBersih, 0)}}</td>
             </tr>
         </table>
 
@@ -370,8 +370,8 @@
                 <td>{{ $item->isi_3 }}</td>
                 <td>{{ $item->isi_4 }}</td>
                 <td>{{ date("d F Y", strtotime($item->isi_5)) }}</td>
-                <td>{{number_format($item->isi_6, 0)}}</td>
-                <td>{{number_format($item->isi_7, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_6, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_7, 0)}}</td>
                 @php
                     $totalPerolehanHartaTidakBergerak += $item->isi_6;
                     $totalNJOPHartaTidakBergerak += $item->isi_7;
@@ -387,8 +387,8 @@
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
                 <td style="border: none;"></td>
-                <td>{{number_format($totalPerolehanHartaTidakBergerak, 0)}}</td>
-                <td>{{number_format($totalNJOPHartaTidakBergerak, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalPerolehanHartaTidakBergerak, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalNJOPHartaTidakBergerak, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -433,8 +433,8 @@
                 <td>{{ $item->isi_2 }}/{{ $item->isi_3 }}/{{ date("d F Y", strtotime($item->isi_4)) }}</td>
                 <td>{{ $item->isi_5 }}/{{ $item->isi_6 }}</td>
                 <td>{{ date("d F Y", strtotime($item->isi_4)) }}</td>
-                <td>{{number_format($item->isi_7, 0)}}</td>
-                <td>{{number_format($item->isi_8, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_7, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_8, 0)}}</td>
                 @php
                     $nilaiPerolehanHartaBergerakTransportasi += $item->isi_7;
                     $totalNJHartaBergerakTransportasi += $item->isi_8;
@@ -449,8 +449,8 @@
                 <td style="border: none;"></td>
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
-                <td>{{number_format($nilaiPerolehanHartaBergerakTransportasi, 0)}}</td>
-                <td>{{number_format($totalNJHartaBergerakTransportasi, 0)}}</td>
+                <td style="text-align: right;">{{number_format($nilaiPerolehanHartaBergerakTransportasi, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalNJHartaBergerakTransportasi, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -494,8 +494,8 @@
                 <td>{{ $item->isi_2 }}/{{ $item->isi_3 }}</td>
                 <td>{{ date("d F Y", strtotime($item->isi_5)) }}</td>
                 <td>{{ $item->isi_4 }}</td>
-                <td>{{number_format($item->isi_6, 0)}}</td>
-                <td>{{number_format($item->isi_7, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_6, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_7, 0)}}</td>
                 @php
                     $omzetHartaBergerakUsaha += $item->isi_6;
                     $totalNJHartaBergerakUsaha += $item->isi_7;
@@ -510,8 +510,8 @@
                 <td style="border: none;"></td>
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
-                <td>{{number_format($omzetHartaBergerakUsaha, 0)}}</td>
-                <td>{{number_format($totalNJHartaBergerakUsaha, 0)}}</td>
+                <td style="text-align: right;">{{number_format($omzetHartaBergerakUsaha, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalNJHartaBergerakUsaha, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -555,8 +555,8 @@
                 <td>{{ $item->isi_2 }}/{{ $item->isi_3 }}</td>
                 <td>{{ date("d F Y", strtotime($item->isi_5)) }}</td>
                 <td>{{ $item->isi_4 }}</td>
-                <td>{{number_format($item->isi_6, 0)}}</td>
-                <td>{{number_format($item->isi_7, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_6, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_7, 0)}}</td>
                 @php
                     $hargaPerolehanHartaBergerakLogam += $item->isi_6;
                     $totalNJHartaBergerakLogam += $item->isi_7;
@@ -571,8 +571,8 @@
                 <td style="border: none;"></td>
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
-                <td>{{number_format($hargaPerolehanHartaBergerakLogam, 0)}}</td>
-                <td>{{number_format($totalNJHartaBergerakLogam, 0)}}</td>
+                <td style="text-align: right;">{{number_format($hargaPerolehanHartaBergerakLogam, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalNJHartaBergerakLogam, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -612,7 +612,7 @@
                 <td>{{ $item->isi_2 }}/{{ $item->isi_3 }}</td>
                 <td>{{ $item->isi_4 }} Lembar/100% Kepemilikan Yang Bersangkutan</td>
                 <td>{{ $item->isi_5 }}</td>
-                <td>{{number_format($item->isi_6, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_6, 0)}}</td>
                 @php
                     $totalNJSuratBerharga += $item->isi_6;
                 @endphp
@@ -626,7 +626,7 @@
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
                 <td style="border: none;"></td>
-                <td>{{number_format($totalNJSuratBerharga, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalNJSuratBerharga, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -668,7 +668,7 @@
                 <td>{{ $item->isi_2 }}/{{ $item->isi_3 }}</td>
                 <td>{{ $item->isi_4 }}</td>
                 <td>{{ $item->isi_5 }}</td>
-                <td>{{number_format($item->isi_6, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_6, 0)}}</td>
                 @php
                     $totalSaldoUangTunai += $item->isi_6;
                 @endphp
@@ -683,7 +683,7 @@
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
                 <td style="border: none;"></td>
-                <td>{{number_format($totalSaldoUangTunai, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalSaldoUangTunai, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -720,7 +720,7 @@
                 <td>{{ $item->isi_1 }}/{{ $item->isi_2 }}</td>
                 <td>{{ $item->isi_3 }}</td>
                 <td>{{ $item->isi_4 }}</td>
-                <td>{{number_format($item->isi_5, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_5, 0)}}</td>
                 @php
                     $totalSaldoPiutang += $item->isi_5;
                 @endphp
@@ -733,7 +733,7 @@
                 <td style="border: none;"></td>
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
-                <td>{{number_format($totalSaldoPiutang, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalSaldoPiutang, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -770,7 +770,7 @@
                 <td>{{ $item->isi_1 }}/{{ $item->isi_2 }}</td>
                 <td>{{ $item->isi_3 }}</td>
                 <td>{{ $item->isi_4 }}</td>
-                <td>{{number_format($item->isi_5, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_5, 0)}}</td>
                 @php
                     $totalSaldoHutang += $item->isi_5;
                 @endphp
@@ -783,7 +783,7 @@
                 <td style="border: none;"></td>
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
-                <td>{{number_format($totalSaldoHutang, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalSaldoHutang, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -818,11 +818,11 @@
             @endphp
             @foreach ($penghasilanJabatan as $item)
             <tr>
-                <td>{{number_format($item->isi_1, 0)}}</td>
-                <td>{{number_format($item->isi_2, 0)}}</td>
-                <td>{{number_format($item->isi_3, 0)}}</td>
-                <td>{{number_format($item->isi_4, 0)}}</td>
-                <td>{{number_format($item->isi_5, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_1, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_2, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_3, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_4, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_5, 0)}}</td>
                 @php
                     $totalBersihPenghasilanJabatan += $item->isi_5;
                 @endphp
@@ -835,7 +835,7 @@
                 <td style="border: none;"></td>
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
-                <td>{{number_format($totalBersihPenghasilanJabatan, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalBersihPenghasilanJabatan, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -870,7 +870,7 @@
                     <th scope="row">{{ $i++ }}</th>
                     <td>{{ $item->isi_1 }}</td>
                     <td>{{ $item->isi_2 }}</td>
-                    <td>{{number_format($item->isi_3, 0)}}</td>
+                    <td style="text-align: right;">{{number_format($item->isi_3, 0)}}</td>
                     @php
                         $totalBersihPenghasilanProfesi += $item->isi_3;
                     @endphp
@@ -882,7 +882,7 @@
                 <td style="border: none;"></td>
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
-                <td>{{number_format($totalBersihPenghasilanProfesi, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalBersihPenghasilanProfesi, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -910,7 +910,7 @@
             <tr style="border: none;">
                 <td style="border: none;"></td>
                 <td style="border: none;">JUMLAH</td>
-                <td>0</td>
+                <td style="text-align: right;">0</td>
             </tr>
         </tfoot>
     </table>
@@ -945,7 +945,7 @@
                 <th scope="row">{{ $i++ }}</th>
                 <td>{{ $item->isi_1 }}</td>
                 <td>{{ $item->isi_2 }}</td>
-                <td>{{number_format($item->isi_3, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_3, 0)}}</td>
                 @php
                     $totalBersihPenghasilanHibah += $item->isi_3;
                 @endphp
@@ -957,7 +957,7 @@
                 <td style="border: none;"></td>
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
-                <td>{{number_format($totalBersihPenghasilanHibah, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalBersihPenghasilanHibah, 0)}}</td>
             </tr>
         </tfoot>
     </table>
@@ -992,7 +992,7 @@
                 <td>{{ $i++ }}</td>
                 <td>{{ $item->isi_1 }}</td>
                 <td>{{ $item->isi_3 }}</td>
-                <td>{{number_format($item->isi_4, 0)}}</td>
+                <td style="text-align: right;">{{number_format($item->isi_4, 0)}}</td>
                 @php
                     $totalBersihPenghasilanSuamiIstri += $item->isi_4;
                 @endphp
@@ -1004,7 +1004,7 @@
                 <td style="border: none;"></td>
                 <td style="border: none;">JUMLAH</td>
                 <td style="border: none;"></td>
-                <td>{{number_format($totalBersihPenghasilanSuamiIstri, 0)}}</td>
+                <td style="text-align: right;">{{number_format($totalBersihPenghasilanSuamiIstri, 0)}}</td>
             </tr>
         </tfoot>
     </table>
